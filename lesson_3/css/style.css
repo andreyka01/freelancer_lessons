@@ -1,0 +1,37 @@
+h1 {
+    color: red;
+}
+.main-list > .list > .item > .first-link {
+    color: #7862D9;
+}
+.second-link {
+    color: #CA1EFA
+}
+.third-link.link {
+    color: #45DB2E;
+}
+.main-list #fourth-link {
+    color: #FF8401;
+}
+div.first-tip.tip h2{
+    color: #2EDB8F;
+}
+div.description>p ~ ul #website-link {
+    color: #e6c93d;
+}
+#second-tip {
+    color: #DB511F;
+}
+#third-tip,
+h2#fourth-tip  {
+    color: #9ADFFB;
+}
+div.nineth-tip + div>h2 {
+    color: red;
+}
+.lemarbet a {
+    color: #F06E69;
+}
+.lemarbet + li a {
+    color: #0347ae;
+}
