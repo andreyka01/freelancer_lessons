@@ -1,0 +1,104 @@
+/* ==============Fonts============== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/lato/Lato-Bold.woff2") format("woff2"), url("../fonts/lato/Lato-Bold.woff") format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/lato/Lato-Black.woff2") format("woff2"), url("../fonts/lato/Lato-Black.woff") format("woff");
+    font-display: swap;
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Larsseit";
+    src: url("../fonts/larsseit/Larsseit-Regular.woff2") format("woff2"), url("../fonts/larsseit/Larsseit-Regular.woff") format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Larsseit";
+    src: url("../fonts/larsseit/Larsseit-Medium.woff2") format("woff2"), url("../fonts/larsseit/Larsseit-Medium.woff") format("woff");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Larsseit";
+    src: url("../fonts/larsseit/Larsseit-Bold.woff2") format("woff2"), url("../fonts/larsseit/Larsseit-Bold.woff") format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+/* ==============Fonts============== */
+body {
+    font-family: "Roboto";
+}
+
+h1 {
+    font-family: "Lato";
+    font-weight: 900;
+    color: red;
+}
+ol a {
+    color: black;
+}
+.main-subtitle {
+    color: goldenrod;
+}
+.first-link.link {
+    color: seagreen;
+    font-family: "Lato";
+}
+h3 {
+    font-family: "Roboto";
+    font-weight: 500;
+}
+a.second-link {
+    color: darkred;
+}
+#first-tip {
+    color: brown;
+}
+li.fourth-item.item a {
+    color: hotpink;
+}
+.first-tip.tip + .second-tip h2 {
+    color: turquoise;
+}
+.tip h2 {
+    font-family: "Lato";
+    font-weight: 700;
+    color: gray;
+}
+.second-tip.tip ~ .third-tip a {
+    color: red;
+}
+div.first-tip.tip .advantages li,.disadvantages li  {
+    color: royalblue;
+    font-family: "Larsseit";
+}
+li.purple {
+    color: purple;
+}
+.description > p {
+    color: olive;
+}
+main + footer p {
+    color: lightcoral;
+}
+footer ol .max-estate {
+    color: burlywood;
+}
