@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&display=swap');
+@font-face {
+   font-family: "Comfortaa";
+   src: url("../fonts/comfortaa/Comfortaa-Regular.woff2") format("woff2"), url("../fonts/comfortaa/Comfortaa-Regular.woff") format("woff");
+   font-display: swap;
+   font-weight: 400;
+}
+@font-face {
+   font-family: "Comfortaa";
+   src: url("../fonts/comfortaa/Comfortaa-Medium.woff2") format("woff2"), url("../fonts/comfortaa/Comfortaa-Medium.woff") format("woff");
+   font-display: swap;
+   font-weight: 500;
+}
+@font-face {
+   font-family: "Comfortaa";
+   src: url("../fonts/comfortaa/Comfortaa-Bold.woff2") format("woff2"), url("../fonts/comfortaa/Comfortaa-Bold.woff") format("woff");
+   font-display: swap;
+   font-weight: 700;
+}
+
+body {
+   font-size: 18px;
+   font-family: Comfortaa, serif;
+}
+
+h1 {
+   color: red;
+   font-size: 30px;
+   text-align: center;
+   letter-spacing: 7px;
+}
+main h2 {
+   color: #2b2b2b;
+   font-size: 25px;
+   font-weight: 700;
+}
+ol.list {
+   padding-left: 50px;
+   font-family: Bitter, sans-serif;
+   font-style: italic;
+   margin-bottom: 40px;
+}
+ol > .item > a {
+   font-size: 18px;
+   color: goldenrod;
+   text-decoration: underline;
+}
+.first-link.link {
+   color: yellowgreen;
+   text-decoration: line-through;
+}
+.list .second-link {
+   color: darkgreen;
+   font-size: 20px;
+   text-decoration: none;
+}
+.list .third-link.link {
+   color: darkmagenta;
+}
+.tip h2 {
+   color: darkorange;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+#first-tip ~ .description > p {
+   color: chocolate;
+   text-transform: capitalize;
+   font-size: 18px;
+   line-height: 1.4;
+}
+div.first-tip + div.second-tip .description > p {
+   text-align: justify;
+}
+.second-tip.tip + .third-tip .description p {
+   color: rgb(0, 119, 8);
+   text-transform: lowercase;
+   font-size: 20px;
+   word-spacing: 20px;
+   width: 60%;
+}
+main .tip {
+   padding-left: 50px;
+   padding-right: 50px;
+   margin-bottom: 30px;
+   background-color: #f4f3f3;
+}
+.fourth-tip ~ div.fifth-tip.tip {
+   width: 900px;
+}
+.description ol {
+   padding-left: 25px;
+}
+.description ol > li  {
+   font-family: Bitter, sans-serif;
+   color: mediumaquamarine;
+   font-size: 18px;
+}
+.first-tip.tip {
+   padding-top: 60px;
+}
+.first-line {
+   text-align: right;
+   color: darkkhaki;
+   text-shadow: 5px 3px 2px darkkhaki;
+}
+.first-line + p {
+   text-align: center;
+   color: crimson;
+   white-space: nowrap;
+}
+#third-line {
+   text-align: left;
+   color: salmon;
+   text-shadow: -5px -3px 2px salmon;
+   margin-bottom: 40px;
+}
+main > h2 {
+   text-indent: 10px;
+}
+footer p {
+   font-size: 18px;
+   color: darkolivegreen;
+}
+footer li {
+   font-family: Bitter, serif;
+   font-weight: 700;
+}
+footer p + ol li a {
+   color: red;
+}
