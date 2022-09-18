@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body {
+   font-family: Lato, sans-serif;
+   font-weight: 400;
+   color: #424551;
+}
+header {
+   max-width: 810px;
+   margin: 0px auto;
+}
+main {
+   max-width: 810px;
+   margin: 0px auto;
+}
+.main-title {
+   font-size: 46px;
+   font-weight: 900;
+   line-height: 1.3;
+   margin-bottom: 92px;
+   color: #1E212C;
+}
+.images {
+   margin-bottom: 60px;
+}
+.images img {
+   max-width: 100%;
+}
+.bold-text {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.5;
+   margin-bottom: 24px;
+   color: #1E212C;
+}
+.description p {
+   line-height: 1.6;
+}
+.description > .description-first {
+   margin-bottom: 40px;
+}
+.description {
+   margin-bottom: 48px;
+}
+.quote {
+   padding-left: 58px;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.5;
+   margin-bottom: 48px;
+   color: #1E212C;
+}
+.after-quote-text {
+   margin-bottom: 24px;
+   line-height: 1.6;
+}
+.list {
+   margin-bottom: 24px;
+}
+.item {
+   line-height: 1.6;
+   margin-top: 4px;
+   padding-left: 32px;
+}
+.after-list-text {
+   line-height: 1.6;
+   margin-bottom: 60px;
+}
+.first-experiment {
+   background-color: #1E212C;
+   color: #fff;
+   max-width: 600px;
+   min-height: 20px;
+   padding: 20px;
+   margin: 0 auto 20px;
+}
+.second-experiment {
+   padding: 20px;
+   margin: 0 auto 20px;
+   min-width: 300px;
+   max-height: 90px;
+   color: #fff;
+   background-color: green;
+   overflow: scroll;
+}
+.third-experiment {
+   margin-bottom: 20px;
+   padding: 20px;
+   min-width: 300px;
+   background-color: gray;
+   color: #fff;
+   border: 5px solid rgb(16, 19, 45);
+}
+.fourth-experiment {
+   padding: 20px;
+   max-width: 800px;
+   background-color: darkorange;
+   color: #fff;
+   border-top: 5px dashed rgb(16, 19, 45);
+   border-right: 5px dotted rgb(156, 164, 236);
+   border-bottom: 5px double rgb(27, 28, 34);
+   border-left: 5px solid rgb(88, 104, 190);
+   margin-bottom: 20px;
+}
+.fifth-experiment {
+   width: 100px;
+   height: 100px;
+   background: darkcyan;
+   border-radius: 50%;
+   margin: 0px auto 20px;
+   overflow: hidden;
+   box-shadow: 10px 1px 4px 3px darkcyan, inset -1px -1px 4px 3px rgb(17, 26, 26);
+}
+.sixth-experiment {
+   outline: 4px solid #000;
+   background-color: rgb(243, 193, 69);
+   color: #fff;
+   margin-bottom: 20px;
+}
+.sixth-experiment p {
+   padding: 30px;
+   opacity: 0.7;
+}
+.sixth-experiment img {
+   max-width: 100%;
+   visibility: hidden;
+}
+.seventh-experiment {
+   background-color: seagreen;
+   padding: 20px;
+   
+   display: none;
+}
+.eighth-experiment {
+   padding: 15px;
+   color: #fff;
+   background-color: saddlebrown;
+   font-size: 0;
+   margin-bottom: 20px;
+}
+.eighth-experiment span {
+   font-size: 16px;
+   background-color: darkcyan;
+}
