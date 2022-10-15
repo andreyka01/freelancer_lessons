@@ -1,0 +1,327 @@
+body {
+
+}
+
+.wrapper {
+   position: relative;
+   overflow: hidden;
+   min-height: 100%;
+}
+
+[class*="__container"] {
+   max-width: 980px;
+   margin: 0px auto;
+}
+
+.header {
+   padding: 15px;
+   background-color: #ff8c00;
+   position: fixed;
+   width: 100%;
+   z-index: 100;
+}
+.header__container {
+}
+.header__list {
+   color: #fff;
+}
+.header__item {
+   display: inline-block;
+   position: relative;
+}
+.header__item:not(:last-child) {
+   margin-right: 15px;
+}
+.header__item:hover .header__list-subtitle {
+   opacity: 1;
+   visibility: visible;
+} 
+.header__link {
+   display: inline-block;
+   padding: 10px;
+}
+.header__list-subtitle {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   background-color: #007f8b;
+   width: 200%;
+   padding: 10px;
+}
+.subtitle-list {
+   opacity: 0;
+   visibility: hidden;
+   position: absolute;
+   z-index: 1
+}
+.subtitle-list__item {
+
+}
+.subtitle-list__item:not(:last-child) {
+   margin-bottom: 10px;
+}
+.subtitle-list__link {
+   display: inline-block;
+   padding: 5px;
+}
+
+.page {
+}
+.page__first-example {
+   padding: 100px 15px 15px;
+}
+.first-exmaple {
+   
+}
+.first-exmaple__container {
+}
+.first-exmaple__block {
+   padding: 25px;
+   background-color: #eee;
+}
+.first-exmaple__item {
+   position: relative;
+   padding: 20px;
+   text-align: center;
+   color: #fff;
+   font-weight: 1.2;
+}
+.first-exmaple__item--blue {
+   background-color: rgb(0, 85, 197);
+}
+.first-exmaple__item--orange {
+   top: -20px;
+   left: 0;
+   background-color: #ff8c00;
+}
+.first-exmaple__item--green {
+   top: -50px;
+   left: 0;
+   background-color: #007f8b;
+}
+
+.page__second-example {
+   padding: 15px;
+   margin-bottom: 70px;
+}
+.second-example {
+}
+.second-example__container {
+}
+.second-example__block {
+   position: relative;
+   padding: 25px;
+   background-color: #eee;
+}
+.second-example__item {
+   position: relative;
+   padding: 20px;
+   text-align: center;
+   color: #fff;
+   font-weight: 1.2;
+}
+.second-example__item--blue {
+   position: absolute;
+   width: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgb(0, 85, 197);
+}
+.second-example__item--orange {
+   background-color: #ff8c00;
+   z-index: 2;
+}
+.second-example__item--green {
+   background-color: #007f8b;
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   left: 0;
+}
+
+.page__car {
+}
+.car {
+   position: relative;
+   width: 500px;
+   height: 300px;
+   margin: 0px auto;
+}
+.car__window {
+   position: absolute;
+   top: -50px;
+   left: 0px; 
+   width: 300px;
+   height: 100px;
+   background-color: rgb(200, 0, 0);
+   /* background-color: #007f8b; */
+   z-index: 3;
+   border-radius: 100% 0% 34% 66% / 50% 100% 0% 50%; 
+   /* border-radius: 100% 0% 48% 52% / 100% 100% 0% 0%; */
+}
+.window__glass {
+   position: absolute;
+   top: 10px;
+   left: 0;
+   width: 250px;
+   height: 60px;
+   background-color: rgba(0, 0, 0, 0.6);
+   border-radius: 100% 0% 100% 0% / 100% 100% 0% 0% ;
+}
+.window__glass--back {
+   position: absolute;
+   top: 10px;
+   left: 249px;
+   width: 160px;
+   border-radius: 0% 100% 100% 0% / 0% 100% 0% 100%;
+   /* z-index: 4; */
+}
+.car__door {
+   position: absolute;
+   top: 20px;
+   left: 0;
+   background-color: rgb(200, 0, 0);
+   width: 250px;
+   height: 130px;
+   z-index: 4;
+   /* border-radius: 0% 100% 100% 0% / 100% 0% 100% 0%; */
+   border-radius: 0% 100% 0% 100% / 0% 0% 100% 100%;
+   box-shadow:  -5px 5px 10px rgba(3, 3, 3, 0.2), 5px -5px 10px rgba(3, 3, 3, 0.2);
+   border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.car__door--back {
+   position: absolute;
+   top: 20px;
+   left: 250px;
+   background-color: rgb(200, 0, 0);
+   width: 160px;
+   height: 130px;
+   border-radius: 0% 100% 100% 0% / 100% 0% 100% 0%;
+   box-shadow:  5px 5px 10px rgba(3, 3, 3, 0.2), 5px -5px 10px rgba(3, 3, 3, 0.2);
+   border: 1px solid rgba(0, 0, 0, 0.3);
+   z-index: 4;
+}
+.door__handle {
+   position: relative;
+   top: 0;
+   left: 0;
+}
+.door__handle--right {
+   position: absolute;
+   top: 25px;
+   left: 5px;
+   width: 50px;
+   height: 7px;
+   background-color: #000;
+   z-index: 100;
+}
+.door__handle--left {
+   position: absolute;
+   top: 25px;
+   left: 190px;
+   width: 50px;
+   height: 7px;
+   background-color: #000;
+}
+.car__platform {
+   position: relative;
+   /* display: inline-block; */
+   top: 0;
+   left: 0;
+   width: 300px;
+   height: 150px;
+   background-color: rgb(200, 0, 0);
+}
+.car__platform::before {
+   position: absolute;
+   top: 0;
+   left: -300px;
+   content: "";
+   display: inline-block;
+   width: 300px;
+   height: 100%;
+   background-color: rgb(200, 0, 0);
+   border-radius: 100% 0% 48% 52% / 100% 100% 0% 0%;
+}
+.car__platform::after {
+   position: absolute;
+   top: -33.5%;
+   right: -300px;
+   content: "";
+   display: inline-block;
+   width: 300px;
+   height: 133.5%;
+   background-color: rgb(200, 0, 0);;
+   /* border-radius: 0% 100% 34% 66% / 100% 32% 68% 0%; */
+   border-radius: 0% 100% 100% 0% / 0% 88% 12% 100%;
+   /* z-index: 3; */
+}
+.car__wheels {
+}
+.wheels {
+   position: relative;
+   /* background-color: #000; */
+   /* border-radius: 50%; */
+   width: 100%;
+   height: 100px;
+   /* opacity: .2; */
+}
+.wheels__left {
+   position: absolute;
+   top: -50px;
+   left: -150px;
+   width: 110px;
+   height: 110px;
+   border-radius: 50%;
+   border: 15px solid #000;
+   background-color: rgb(84, 84, 84);
+}
+.wheels__right {
+   position: absolute;
+   top: -50px;
+   right: 0;
+   width: 110px;
+   height: 110px;
+   border-radius: 50%;
+   border: 15px solid #000;
+   background-color: rgb(84, 84, 84);
+   z-index: 4;
+}
+.disc {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 80px;
+   height: 80px;
+   background: url('../img/disc.png') 0 0 / cover no-repeat;
+   border-radius: 50%;
+}
+.car__light {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+.light {
+}
+.light__front {
+   width: 20px;
+   height: 20px;
+   background-color: yellow;
+   border-radius: 50%;
+   position: relative;
+   top: 100px;
+   left: -260px;
+   box-shadow: 4px 4px 4px 10px yellow;
+}
+.light__back {
+   width: 20px;
+   height: 20px;
+   background-color: rgb(255, 68, 0);
+   border-radius: 50%;
+   position: relative;
+   top: 70px;
+   left: 540px;
+   box-shadow: 4px 4px 4px 10px rgb(255, 68, 0);
+   z-index: 2;
+}
