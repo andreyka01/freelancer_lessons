@@ -1,0 +1,198 @@
+/*================= Fonts =================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+/*================= Fonts =================*/
+
+body {
+   font-family: "Lato", sans-serif;
+   background-color: #eee;
+}
+
+.wrapper {
+   position: relative;
+   min-height: 100%;
+   overflow: hidden;
+}
+
+.page {
+   padding: 15px;
+}
+.page__example {
+   margin: 0px auto;
+}
+.page__example:not(:last-child) {
+   margin-bottom: 50px;
+}
+.example-first,
+.example-second,
+.example-third,
+.example-fourth,
+.example-fifth {
+   width: 200px;
+   height: 200px;
+   background-color: rgb(90, 90, 90);
+}
+.example-first__item,
+.example-second__item,
+.example-third__item,
+.example-fourth__item,
+.example-fifth__item {
+   width: 200px;
+   height: 200px;
+   background-color: rgb(255, 208, 0);
+   transition: all 0.5s ease;
+
+}
+.example-first__item p,
+.example-second__item p,
+.example-third__item p,
+.example-fourth__item p,
+.example-fifth__item p {
+   text-align: center;
+   color: rgb(27, 27, 27);
+}
+.example-first:hover .example-first__item {
+   transform: translate(30px, 60px);
+}
+.example-second__item {
+   background-color: rgb(255, 186, 57);
+}
+.example-second:hover .example-second__item {
+   transform: rotate(45deg);
+}
+.example-third__item {
+   background-color: rgb(101, 208, 0);
+}
+.example-third:hover .example-third__item {
+   transform: scale(1.2);
+}
+.example-fourth__item {
+   background-color: rgb(255, 216, 59);
+}
+.example-fourth:hover .example-fourth__item {
+   transform: skew(20deg, 10deg);
+}
+.example-fifth {
+   perspective: 200px;
+}
+.example-fifth__item {
+   transform-origin: 0 0;
+   background-color: salmon;
+}
+.example-fifth:hover .example-fifth__item {
+   transform: rotateY(70deg);
+}
+
+.page__сard {
+   position: relative;
+   max-width: 1200px;
+   margin: 0px auto;
+}
+.card {}
+.card__body {}
+.card__body p {
+   text-align: center;
+   line-height: 1.2;
+   font-size: 18px;
+}
+.card__body p:last-child {
+   position: absolute;
+   top: 50%;
+   left: 40%;
+   color: red;
+   font-weight: 700;
+   text-transform: uppercase;
+   visibility: hidden;
+   opacity: 0;
+}
+.card__body p span {
+   color: red;
+   font-weight: 600;
+   display: inline-block;
+   position: relative;
+}
+.card__item {
+   display: inline-block;
+   width: 200px;
+   height: 300px;
+   perspective: 900px;
+   transition: all 2s ease;
+   transform: rotateX(45deg) scale(0.7);
+   transform-origin: bottom center;
+}
+.card__front {
+   position: absolute;
+   width: 200px;
+   height: 300px;
+   background-color: #daff33;
+   transition: all 2s ease;
+   box-shadow: 2px 2px 5px #000;
+   transform: rotateY(-180deg);
+}
+.card__back {
+   position: absolute;
+   width: 200px;
+   height: 300px;
+   box-shadow: 0px 0px 10px #8d9096;
+   backface-visibility: hidden;
+   transition: all 2s ease;
+   background: url('../img/card-back-removebg.png') -50px 0 / cover no-repeat;
+}
+.card__item:hover {
+   transform: rotateX(0deg) scale(1);
+}
+.card__item:hover > div:first-child {
+   transition-delay: 1s;
+   transform: rotateY(0);
+}
+.card__item:hover > div:last-child {
+   transition-delay: 1s;
+   transform: perspective(900px) rotateY(180deg);
+}
+.card__front--first {
+   background: url('../img/card/6/6-clubs.png') 0 0 / cover no-repeat;
+}
+.card__front--second {
+   background: url('../img/card/9/9-diamond.png') 0 0 / cover no-repeat;
+}
+.card__front--third {
+   background: url('../img/card/6/6-spade.png') 0 0 / cover no-repeat;
+}
+.card__front--fourth {
+   background: url('../img/card/10/10-heart.png') 0 0 / cover no-repeat;
+}
+.card__front--fifth {
+   background: url('../img/card/8/8-club.png') 0 0 / cover no-repeat;
+}
+.card__front--sixth {
+   background: url('../img/card/6/6-heart.png') 0 0 / cover no-repeat;
+}
+.card__front--seventh {
+   background: url('../img/card/7/7-spade.png') 0 0 / cover no-repeat;
+}
+.card__front--eigth {
+   background: url('../img/card/ace/ace-heart.png') 0 0 / cover no-repeat;
+}
+.card__front--nineth {
+   background: url('../img/card/10/10-diamond.png') 0 0 / cover no-repeat;
+}
+.card__front--tenth {
+   background: url('../img/card/8/8-diamond.png') 0 0 / cover no-repeat;
+}
+
+.card__message {
+   position: absolute;
+   top: 10px;
+   left: 220px;
+   display: inline-block;
+   color: red;
+   font-weight: 700;
+   text-transform: uppercase;
+   visibility: hidden;
+   opacity: 0;
+}
+.card__item > .card__front--eigth:hover + p.card__message {
+   visibility: visible;
+   opacity: 1;
+}
