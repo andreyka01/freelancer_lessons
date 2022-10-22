@@ -114,7 +114,7 @@ body {
    text-align: center;
    line-height: 190px;
    opacity: 1;
-   animation: turning-on 1s ease 3s 1 forwards, turning-of 1s ease 35s forwards;
+   animation: turning-on 1s ease 3s 1 forwards, turning-of 1s ease 53s forwards;
    z-index: 2;
    letter-spacing: 1.3px;
 }
@@ -135,10 +135,10 @@ body {
    transform: translate(400%, 0);
 }
 .room__television img:nth-of-type(1) {
-   animation: reporter 15s ease-in-out 5s backwards;
+   animation: reporter 12s ease-in-out 5s alternate 2 forwards;
 }
 .room__television img:nth-of-type(2) {
-   animation: reporter 15s ease-in-out 20s forwards;
+   animation: reporter 12s ease-in-out 28s alternate 2 forwards;
 }
 @keyframes turning-on {
    0% {}
@@ -175,6 +175,6 @@ body {
       transform: translate(100%, 0%);
    }
    100% {
-      transform: translate(-200%, 0%);
+      transform: translate(100%, 0%);
    }
 }
