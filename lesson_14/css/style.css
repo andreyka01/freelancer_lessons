@@ -1,0 +1,184 @@
+/*================= Fonts =================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+/*================= Fonts =================*/
+
+body {
+   font-family: "Lato", sans-serif;
+   background-color: #eee;
+   color: #000;
+}
+
+.wrapper {
+   position: relative;
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+.page {
+   flex: 1 1 auto;
+   width: 80%;
+   padding: 15px;
+   margin: 0px auto;
+}
+
+
+.page__example {
+   background-color: rgb(0, 111, 142);
+}
+.page__example:not(:last-child) {
+   margin-bottom: 30px;
+}
+.example {
+   display: flex;
+}
+.example--second {
+   justify-content: flex-end;
+}
+.example--third {
+   flex-wrap: wrap;
+}
+.example--fourth {
+   align-items: flex-start;
+   min-height: 100px;
+   flex-wrap: wrap;
+}
+.example--fifth {
+   align-items: flex-end;
+   min-height: 100px;
+   flex-wrap: wrap;
+}
+.example--sixth {
+   align-items: center;
+   min-height: 100px;
+   flex-wrap: wrap;
+}
+.example--seventh {
+   min-height: 100px;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.example--eighth {
+   min-height: 100px;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.example--eighth div:nth-child(2) {
+   align-self: flex-start;
+}
+.example--eighth div:nth-child(4) {
+   align-self: flex-end;
+}
+.example--ninenth {
+   min-height: 100px;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.example--ninenth div:nth-child(1) {
+   order: 2;
+}
+.example--ninenth div:nth-child(2) {
+   order: 3;
+}
+.example--ninenth div:nth-child(3) {
+   order: 4;
+}
+.example--ninenth div:nth-child(4) {
+   order: 1;
+}
+.example--tenth {
+   min-height: 100px;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+.example--tenth div:nth-child(2) {
+   flex-grow: 1;
+}
+.example--eleventh {
+   min-height: 100px;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+.example--eleventh div:nth-child(2) {
+   flex: 0 1 60%;
+}
+.example--twelveth {
+   min-height: 100px;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.example--twelveth div:nth-child(2) {
+   flex: 0 0 60%;
+}
+.example--thirteenth {
+   min-height: 400px;
+   flex-direction: column;
+   justify-content: space-evenly;
+   text-align: center;
+   flex-wrap: wrap;
+}
+
+.example__items {
+   padding: 15px;
+   background-color: yellow;
+   font-weight: 700;
+}
+.item {
+}
+.page__my-example {
+}
+.my-example {
+   display: flex;
+   margin: 0 -7.5px;
+}
+.my-example__column {
+   flex: 0 1 25%;
+   padding: 7.5px;
+}
+.my-example__item {
+   padding: 10px;
+   background-color: rgb(0, 151, 48);
+   font-weight: 700;
+   color: #fff;
+   text-align: center;
+}
+.page__cards {
+   padding-top: 10px;
+}
+.card {
+   display: flex;
+   margin: 0px -7.5px;
+}
+.card__item {
+   flex: 0 1 50%;
+   padding: 0px 7.5px;
+}
+.item {}
+.item-element  {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 20px;
+   min-height: 100%;
+   background-color: #fff;
+   padding: 10px;
+}
+.item-element h4 {
+   font-size: 20px;
+}
+.item-element p {
+   flex: 1 1 auto;
+   line-height: 1.2;
+}
+.button {
+   padding: 10px;
+   background-color: yellow;
+}

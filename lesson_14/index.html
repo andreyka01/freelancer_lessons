@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 14</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+         <h4>justify-content: flex-start; align-items: stretch; flex-wrap: nowrap;</h4>
+         <div class="page__example example">
+            <div class="example__items item">1</div>
+            <div class="example__items item">2</div>
+            <div class="example__items item">3</div>
+            <div class="example__items item">4</div>
+         </div>
+         <h4>justify-content: flex-end; align-items: stretch; flex-wrap: nowrap;</h4>
+         <div class="page__example example example--second">
+            <div class="example__items item">1</div>
+            <div class="example__items item">2</div>
+            <div class="example__items item">3</div>
+            <div class="example__items item">4</div>
+         </div>
+         <h4>justify-content: flex-start; align-items: stretch; flex-wrap: wrap;</h4>
+         <div class="page__example example example--third">
+            <div class="example__items item">1</div>
+            <div class="example__items item">2</div>
+            <div class="example__items item">3</div>
+            <div class="example__items item">4</div>
+         </div>
+         <h4>justify-content: flex-start; align-items: flex-start; flex-wrap: wrap;</h4>
+         <div class="page__example example example--fourth">
+            <div class="example__items item">1</div>
+            <div class="example__items item">2</div>
+            <div class="example__items item">3</div>
+            <div class="example__items item">4</div>
+         </div>
+         <h4>justify-content: flex-start; align-items: flex-end; flex-wrap: wrap;</h4>
+         <div class="page__example example example--fifth">
+            <div class="example__items item">1</div>
+            <div class="example__items item">2</div>
+            <div class="example__items item">3</div>
+            <div class="example__items item">4</div>
+         </div>
+         <h4>justify-content: flex-start; align-items: center; flex-wrap: wrap;</h4>
+         <div class="page__example example example--sixth">
+            <div class="example__items item">1</div>
+            <div class="example__items item">2</div>
+            <div class="example__items item">3</div>
+            <div class="example__items item">4</div>
+         </div>
+         <h4>justify-content: center; align-items: center; flex-wrap: wrap;</h4>
+         <div class="page__example example example--seventh">
+            <div class="example__items item">1</div>
+            <div class="example__items item">2</div>
+            <div class="example__items item">3</div>
+            <div class="example__items item">4</div>
+         </div>
+         <h4>justify-content: center; align-items: center; flex-wrap: wrap; nth-child(2) {align-self: flex-start;} nth-child(4) {align-self: flex-end;}</h4>
+         <div class="page__example example example--eighth">
+            <div class="example__items item">1</div>
+            <div class="example__items item">2</div>
+            <div class="example__items item">3</div>
+            <div class="example__items item">4</div>
+         </div>
+         <h4>justify-content: space-between; align-items: center; flex-wrap: wrap; first-order 2, second 3, third 4, fourth 1</h4>
+         <div class="page__example example example--ninenth">
+            <div class="example__items item">1</div>
+            <div class="example__items item">2</div>
+            <div class="example__items item">3</div>
+            <div class="example__items item">4</div>
+         </div>
+         <h4>justify-content: space-evenly; align-items: center; flex-wrap: wrap; nth-child(2) {flex-grow: 1;}</h4>
+         <div class="page__example example example--tenth">
+            <div class="example__items item">1</div>
+            <div class="example__items item">2</div>
+            <div class="example__items item">3</div>
+            <div class="example__items item">4</div>
+         </div>
+         <h4>justify-content: space-evenly; align-items: center; flex-wrap: wrap; nth-child(2) {flex: 0 1 60%;}</h4>
+         <div class="page__example example example--eleventh">
+            <div class="example__items item">1</div>
+            <div class="example__items item">2</div>
+            <div class="example__items item">3</div>
+            <div class="example__items item">4</div>
+         </div>
+         <h4>justify-content: space-evenly; align-items: center; flex-wrap: wrap; nth-child(2) {flex: 0 0 60%;}</h4>
+         <div class="page__example example example--twelveth">
+            <div class="example__items item">1</div>
+            <div class="example__items item">2</div>
+            <div class="example__items item">3</div>
+            <div class="example__items item">4</div>
+         </div>
+         <h4>justify-content: space-evenly;; align-items: stretch; flex-direction: column;</h4>
+         <div class="page__example example example--thirteenth">
+            <div class="example__items item">1</div>
+            <div class="example__items item">2</div>
+            <div class="example__items item">3</div>
+            <div class="example__items item">4</div>
+         </div>
+         <div class="page__my-example my-example">
+            <div class="my-example__column">
+               <div class="my-example__item">1</div>
+            </div>
+            <div class="my-example__column">
+               <div class="my-example__item">2</div>
+            </div>
+            <div class="my-example__column">
+               <div class="my-example__item">3</div>
+            </div>
+            <div class="my-example__column">
+               <div class="my-example__item">4</div>
+            </div>
+         </div>
+         <div class="page__cards card">
+            <div class="card__item item">
+               <div class="item-element">
+                  <h4>I am a title</h4>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quas debitis animi. Eligendi quasi enim pariatur labore, quis fugiat veniam dolorem aliquid non aperiam temporibus delectus aliquam quo eum exercitationem!</p>
+                  <a href="#" class="button">Я посилання</a>
+               </div>
+            </div>
+            <div class="card__item item">
+               <div class="item-element">
+                  <h4>I am a title</h4>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quas debitis animi. Eligendi quasi enim pariatur labore, quis fugiat veniam dolorem aliquid non aperiam temporibus delectus aliquam quo eum exercitationem!
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque quas debitis animi. Eligendi quasi enim pariatur labore, quis fugiat veniam dolorem aliquid non aperiam temporibus delectus aliquam quo eum exercitationem!
+                  </p>
+                  <a href="#" class="button">Я посилання</a>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+</html>
