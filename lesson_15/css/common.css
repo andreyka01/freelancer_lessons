@@ -1,0 +1,57 @@
+/* ================BUTTON================ */
+
+.button {
+   border-radius: 4px;
+   letter-spacing: 0.5px;
+   font-weight: 700;
+   line-height: 1.25;
+   color: #fff;
+   display: inline-block;
+   padding: 16px 39.5px;   
+   background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+}
+button span {
+   position: relative;
+   z-index: 2;
+}
+.button:hover {
+   background: linear-gradient(55.95deg, #b42d28 0%, #bb4704 100%);
+   box-shadow: 2px 2px 3px rgb(108, 108, 108);
+}
+
+/* ================BUTTON================ */
+
+
+/* ============BUTTON-BORDER============ */
+
+.button--border {
+   background: transparent;
+   padding: 15px 39px;
+   border: 1px solid #FF3F3A;
+   color: #FF3F3A;
+}
+.button--border:hover {
+   background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+   color: #fff;
+   border: 1xp solid transparent;
+}
+
+/* ============BUTTON-BORDER============ */
+
+.text {
+   color: #1E212C;
+}
+.text > *:not(:last-child) {
+   margin-bottom: 8px;
+}
+.text__subtitle {
+   font-weight: 700;
+   line-height: 1.5;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+.text__title {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 1.3;
+}
