@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 16</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+         <div class="page__question question-page">
+            <div class='question-page__container'>
+               <div class="question-page__block">
+                  <div class="question-page__image">
+                     <img src="img/form/form-image.svg" alt="">
+                  </div>
+                  <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                     <div class="form__text text-form">
+                        <h6 class="text-form__subtitle">Any questions?</h6>
+                        <h2 class="text-form__title">Drop us a line</h2>
+                     </div>
+                     <div class="form__input input-form">
+                        <div class="input-form__item">
+                           <label for="user-name" class="input-form__label">First Name*</label>
+                           <input name="user-name" type="text" required placeholder="Your first name" class="input-form__input" id="user-name">
+                        </div>
+                        <div class="input-form__item">
+                           <label for="user-surname" class="input-form__label">Last  Name*</label>
+                           <input name="user-surname" type="text" required placeholder="Your last name" class="input-form__input" id="user-surname">
+                        </div>
+                        <div class="input-form__item">
+                           <label for="user-email" class="input-form__label">Email*</label>
+                           <input name="user-email" type="email" required placeholder="Your working email" class="input-form__input" id="user-email">
+                        </div>
+                        <div class="input-form__item">
+                           <label for="user-phone" class="input-form__label">Phone</label>
+                           <input name="user-phone" type="tel" placeholder="Your phone number" class="input-form__input" id="user-phone">
+                        </div>
+                        <div class="input-form__categories">
+                           <h2>You are:</h2>
+                           <div class="input-form__item input-form__item--radio">
+                              <input name="user-status" type="radio" class="input-form__input input-form__input--radio" value="student" id="user-student">
+                              <label for="user-student" class="input-form__label input-form__label-radio">Student</label>
+                           </div>
+                           <div class="input-form__item input-form__item--radio">
+                              <input name="user-status" type="radio" class="input-form__input input-form__input--radio" value="worker" id="user-worker">
+                              <label for="user-worker" class="input-form__label input-form__label-radio">Worker</label>
+                           </div>
+                           <div class="input-form__item input-form__item--radio">
+                              <input name="user-status" type="radio" class="input-form__input input-form__input--radio" value="businessman" id="user-businessman">
+                              <label for="user-businessman" class="input-form__label input-form__label-radio">Businessman</label>
+                           </div>
+                           <div class="input-form__item input-form__item--radio">
+                              <input name="user-status" type="radio" class="input-form__input input-form__input--radio" value="unemployed" id="user-unemployed">
+                              <label for="user-unemployed" class="input-form__label input-form__label-radio">Unemployed</label>
+                           </div>
+                           <div class="input-form__item input-form__item--radio">
+                              <input name="user-status" type="radio" class="input-form__input input-form__input--radio" value="others" id="user-others">
+                              <label for="user-others" class="input-form__label input-form__label-radio">Others</label>
+                           </div>
+                        </div>
+                        <div class="input-form__item input-form__item--text">
+                           <label for="user-message" class="input-form__label">Message*</label>
+                           <textarea name="user-message" required placeholder="Your message" class=" input-form__input input-form__input--textarea" id="user-message"></textarea>
+                        </div>
+                        <div class="input-form__submit submit">
+                           <div class="submit__checkbox checkbox-agreement">
+                              <input type="checkbox" required class="checkbox-agreement__checkbox" id="user-agreement">
+                              <label for="user-agreement" class="checkbox-agreement__label"><span>I agree to receive communications from Createx Online School</span></label>
+                           </div>
+                           <div class="sumbit__button button-sumbit">
+                              <button type="submit" class="button-sumbit__button"><span>Send message</span></button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+</html>
