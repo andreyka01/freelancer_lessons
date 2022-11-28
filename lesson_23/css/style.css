@@ -1,0 +1,74 @@
+/*================= Fonts =================*/
+
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+/*================= Fonts =================*/
+
+/* =================================================== */
+
+body {
+   font-family: "Lato";
+}
+
+.wrapper {
+   position: relative;
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper > main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   max-width: 1260px;
+   margin: 0px auto;
+   padding: 0px 15px;
+}
+
+
+/* ============================ */
+.page__lessons {
+   padding: 100px 30px;
+   background-color: #fff;
+}
+.lesson {
+   display: flex;
+   flex-direction: column;
+   row-gap: 20px;
+}
+.lesson h2 {
+   font-size: 18px;
+   font-weight: 700;
+}
+.lesson h2:not(:last-child) {
+   margin-bottom: 20px;
+}
+.lesson p {
+   line-height: 1.2;
+}
+.lesson p:not(:last-child) {
+   margin-bottom: 5px;
+}
+.lesson__first {
+   padding: 20px;
+   background-color: rgb(255, 214, 68);
+}
+.lesson__options {
+}
+.option {
+}
+.lesson__second {
+   padding: 20px;
+   background-color: rgb(64, 230, 72);
+}
+.lesson__third {
+   padding: 20px;
+   background-color: rgb(93, 202, 224);
+}
+.lesson__fourth {
+   padding: 20px;
+   background-color: rgb(255, 255, 96);
+}
