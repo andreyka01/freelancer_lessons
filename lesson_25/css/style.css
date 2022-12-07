@@ -1,0 +1,93 @@
+/*================= Fonts =================*/
+
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+/*================= Fonts =================*/
+
+/* =================================================== */
+
+body {
+   font-family: "Lato";
+}
+
+.wrapper {
+   position: relative;
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper > main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   max-width: 1260px;
+   margin: 0px auto;
+   padding: 0px 15px;
+}
+
+
+/* ============================ */
+.page__lessons {
+   padding: 100px 30px;
+   background-color: #fff;
+}
+.lesson {
+   display: flex;
+   flex-direction: column;
+   row-gap: 20px;
+}
+.lesson__example {
+   display: flex;
+   justify-content: center;
+}
+
+
+.form {
+   display: flex;
+   justify-content: center;
+}
+.form__search {
+   position: relative;
+   background: #eee;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 20px;
+   padding-right: 10px;
+}
+.form__limit {
+   font-size: 12px;
+}
+.form__input {
+   display: flex;
+}
+
+.form__submit {
+   display: block;
+   padding: 5px 10px;
+}
+.form__body {
+   position: relative;
+   width: 0%;
+   visibility: hidden;
+   opacity: 0;
+   flex-direction: column;
+   row-gap: 5px;
+}
+.search {
+   position: relative;
+   top: 7px;
+   flex: 0 0 16px;
+   width: 16px;
+   height: 16px;
+   background: url('../img/search.png') 0 0 no-repeat;
+}
+._active {
+   display: flex;
+   width: 100%;
+   visibility: visible;
+   opacity: 1;
+   transition: width 1.4s ease 0s;
+}
